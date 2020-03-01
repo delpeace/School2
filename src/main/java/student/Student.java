@@ -5,6 +5,9 @@
  */
 package student;
 
+import computer.Computer;
+import course.Course;
+
 /**
  *
  * @author joker
@@ -13,6 +16,8 @@ public class Student {
     private String firstName;
     private String lastName;
     private int yearOfBirth;
+    private Course course;
+    private Computer computer;
 
 
     public String getFirstName () {
@@ -39,6 +44,13 @@ public class Student {
         this.yearOfBirth = customYearOfBirth;
     }
     
+    public Course getCourse() {
+       return this.course;
+    }
+    
+    public Computer getComputer() {
+        return this.computer;
+    }
     
     public Student() {
         this.firstName = "Milica";
@@ -57,6 +69,10 @@ public class Student {
         System.out.println("Last Name: " + this.lastName);
         System.out.println("Year of Birth: " + this.yearOfBirth);
     }
+    
+    Course course = new Course();
+    Computer computer = new Computer();
+    
     
     
 }
